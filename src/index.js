@@ -34,7 +34,7 @@ app.post("/Login",(req,res)=>{
            if(password === user.password){
                res.send({message:"login sucess",user:user})
            }else{
-               res.send({message:"wrong credentials"})
+               res.send({message:"wrong credentials : your password Inccorrect"})
            }
         }else{
             res.send("not register")
